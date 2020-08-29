@@ -6,6 +6,8 @@
  * */
 package definitions;
 
+import java.util.Arrays;
+
 public class Student {
     private static final int NUMBER_OF_MAXIMUM_BOOKS_ISSUE = 2;
     private String studentName;
@@ -62,5 +64,13 @@ public class Student {
 
     public void setNamesOfTheBooksIssuedByTheStudent(Book[] namesOfTheBooksIssuedByTheStudent) {
         this.namesOfTheBooksIssuedByTheStudent = namesOfTheBooksIssuedByTheStudent;
+    }
+
+    @Override
+    public String toString() {
+        return "Name of Student: " + getStudentName() + ", " +
+                "University Roll Number: " + getUniversityRollNumber() + ", " +
+                "Number of Books Issued: " + getNumberOfBooksIssuedByTheStudent() + ", " +
+                "Names of Books Issued: " + Arrays.toString(getNamesOfTheBooksIssuedByTheStudent()) + ".";
     }
 }
