@@ -64,4 +64,18 @@ public class Library {
         booksAvailableInLibrary[1].setAuthorName("Narasimha Karumanchi");
         booksAvailableInLibrary[1].setThirteenDigitISBNNumber("9555332612000");
     }
+
+    /**
+     * This method is showing the detail of books available in Library.
+     */
+    public void showAvailableBooks() {
+        System.out.println("BookName" + "                                 " +
+                "" + "AuthorName" + "                              " +
+                "" + "13-Digit ISBN Number");
+        for (int index = 0; index < MAXIMUM_BOOKS_IN_LIBRARY; index++) {
+            System.out.println(booksAvailableInLibrary[index].getBookName() + "   " + booksAvailableInLibrary[index].getAuthorName() + "    " +
+                    booksAvailableInLibrary[index].getThirteenDigitISBNNumber());
+        }
+    }
+
 }
