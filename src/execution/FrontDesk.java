@@ -34,46 +34,6 @@ public class FrontDesk {
             System.out.println("4. Exit.");
             System.out.println("Enter your choice (1..4): ");
             studentChoice = scanner.nextInt();
-            switch (studentChoice) {
-                case ISSUE_A_NEW_BOOK:
-                    library.showAvailableBooks();
-                    scanner.nextLine();
-                    System.out.println("Please enter your name:- ");
-                    student.setStudentName(scanner.nextLine());
-                    System.out.println("Please enter your University roll number: ");
-                    student.setUniversityRollNumber(scanner.nextLong());
-                    System.out.println("How many books you want to issue: ");
-                    student.setNumberOfBooksIssuedByTheStudent(scanner.nextInt());
-                    System.out.println("Available books:------ ");
-                    library.showAvailableBooks();
-                    scanner.nextLine();
-                    System.out.println("Enter the index of the books you want to issue: ");
-                    bookIndex = scanner.nextInt();
-                    scanner.nextLine();
-                    System.out.println("Enter the name of the books you want to issue: ");
-                    bookName = scanner.nextLine();
-                    student.issueBooksToStudents(bookIndex, bookName);
-                    System.out.println("Thank you for Issuing the Books..");
-                    break;
-                case RETURN_A_PREVIOUSLY_ISSUED_BOOK:
-                    System.out.println("Enter the number of the book you want to return: ");
-                    scanner.nextLine();
-                    bookIndex = scanner.nextInt();
-                    if (student.returnBook(bookIndex)) {
-                        System.out.println("Thank you for returning the book " + student.returnBook(bookIndex) + ".");
-                    }
-                    break;
-                case SHOW_ALL_ISSUED_BOOKS:
-                    student.showIssuedBooksByStudent();
-                    break;
-                case EXIT:
-                    System.out.println("Thanks for using me");
-                    break;
-                default:
-                    System.out.println("Your have entered wrong choice!");
-                    break;
-            }
-        } while (studentChoice != EXIT);
-        scanner.close();
-    }
+
+        }
 }
