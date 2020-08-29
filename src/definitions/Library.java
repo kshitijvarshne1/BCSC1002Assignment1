@@ -10,6 +10,18 @@ public class Library {
     private static final int MAXIMUM_BOOKS_IN_LIBRARY = 2;
     private Book[] booksAvailableInLibrary;
 
+    //Parameterized Constructor
+    public Library(Book[] booksAvailableInLibrary) {
+        this.booksAvailableInLibrary = booksAvailableInLibrary;
+    }
+
+    // Non-Parameterized Constructor
+    public Library() {
+        this.booksAvailableInLibrary = new Book[MAXIMUM_BOOKS_IN_LIBRARY];
+        for (int index = 0; index < MAXIMUM_BOOKS_IN_LIBRARY; index++) {
+            this.booksAvailableInLibrary[index] = new Book();
+        }
+    }
 
     // getter method
     public Book[] getBooksAvailableInLibrary() {
