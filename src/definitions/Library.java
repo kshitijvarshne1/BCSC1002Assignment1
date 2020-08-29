@@ -57,8 +57,8 @@ public class Library {
      * This method is store the book detail available in Library.
      */
     public void setBooksInLibrary() {
-        booksAvailableInLibrary[0].setBookName("Java A Beginnner's Guide");
-        booksAvailableInLibrary[0].setAuthorName("Schildt");
+        booksAvailableInLibrary[0].setBookName("Java A Beginnner's Guide 7 ");
+        booksAvailableInLibrary[0].setAuthorName("Schildt and Team");
         booksAvailableInLibrary[0].setThirteenDigitISBNNumber("9756234564380");
         booksAvailableInLibrary[1].setBookName("Data Structures and Algorithms");
         booksAvailableInLibrary[1].setAuthorName("Narasimha Karumanchi");
@@ -69,11 +69,11 @@ public class Library {
      * This method is showing the detail of books available in Library.
      */
     public void showAvailableBooks() {
-        System.out.println("BookName" + "                                 " +
-                "" + "AuthorName" + "                              " +
+        System.out.println("BookName" + "                       " +
+                "      " + "AuthorName" + "                 " +
                 "" + "13-Digit ISBN Number");
         for (int index = 0; index < MAXIMUM_BOOKS_IN_LIBRARY; index++) {
-            System.out.println(booksAvailableInLibrary[index].getBookName() + "   " + booksAvailableInLibrary[index].getAuthorName() + "    " +
+            System.out.println(booksAvailableInLibrary[index].getBookName() + "        " + booksAvailableInLibrary[index].getAuthorName() + "          " +
                     booksAvailableInLibrary[index].getThirteenDigitISBNNumber());
         }
     }
