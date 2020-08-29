@@ -103,5 +103,25 @@ public class Student {
         namesOfTheBooksIssuedByTheStudent[bookIndex].setBookName(bookName);
     }
 
-}
+    /**
+     * This method will return the confirmation for return book
+     *
+     * @param bookIndex The index of the book which is issuing.
+     */
+    public boolean returnBook(int bookIndex) {
+        return bookIndex != 0;
+    }
+
+    /**
+     * This method will show the book which is issued
+     */
+    public void showIssuedBooksByStudent() {
+        System.out.println("These are the books issued by you: ");
+        for (int issuedBookIndex = 0; issuedBookIndex < NUMBER_OF_MAXIMUM_BOOKS_ISSUE; issuedBookIndex++) {
+            if (namesOfTheBooksIssuedByTheStudent[issuedBookIndex].getBookName() != null) {
+                System.out.print(namesOfTheBooksIssuedByTheStudent[issuedBookIndex].getBookName() + (issuedBookIndex < getNumberOfBooksIssuedByTheStudent() - 1 ? ", " : ".\n"));
+
+            }
+        }
+    }
 }
