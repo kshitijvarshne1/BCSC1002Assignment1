@@ -57,7 +57,7 @@ public class Library {
      * This method is store the book detail available in Library.
      */
     public void setBooksInLibrary() {
-        booksAvailableInLibrary[0].setBookName("Java A Beginnner's Guide 7 ");
+        booksAvailableInLibrary[0].setBookName("Java A Beginnner's Guide 7th  ");
         booksAvailableInLibrary[0].setAuthorName("Schildt and Team");
         booksAvailableInLibrary[0].setThirteenDigitISBNNumber("9756234564380");
         booksAvailableInLibrary[1].setBookName("Data Structures and Algorithms");
