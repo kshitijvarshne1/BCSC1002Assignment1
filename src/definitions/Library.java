@@ -7,4 +7,7 @@
 package definitions;
 
 public class Library {
+    private static final int MAXIMUM_BOOKS_IN_LIBRARY = 2;
+    private Book[] booksAvailableInLibrary;
+
 }
