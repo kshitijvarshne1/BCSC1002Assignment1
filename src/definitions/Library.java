@@ -52,4 +52,16 @@ public class Library {
     public int hashCode() {
         return Arrays.hashCode(getBooksAvailableInLibrary());
     }
+
+    /**
+     * This method is store the book detail available in Library.
+     */
+    public void setBooksInLibrary() {
+        booksAvailableInLibrary[0].setBookName("Java A Beginnner's Guide");
+        booksAvailableInLibrary[0].setAuthorName("Schildt");
+        booksAvailableInLibrary[0].setThirteenDigitISBNNumber("9756234564380");
+        booksAvailableInLibrary[1].setBookName("Data Structures and Algorithms");
+        booksAvailableInLibrary[1].setAuthorName("Narasimha Karumanchi");
+        booksAvailableInLibrary[1].setThirteenDigitISBNNumber("9555332612000");
+    }
 }
