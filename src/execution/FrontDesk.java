@@ -44,19 +44,19 @@ public class FrontDesk {
                     student.setUniversityRollNumber(scanner.nextLong());
                     System.out.println("How many books you want to issue: ");
                     student.setNumberOfBooksIssuedByTheStudent(scanner.nextInt());
-                    System.out.println("Available books:------ ");
+                    System.out.println("Available books:--------------");
                     library.showAvailableBooks();
                     scanner.nextLine();
-                    System.out.println("Enter the index of the books you want to issue: ");
+                    System.out.println("Enter the index of the books you want to issue:- ");
                     bookIndex = scanner.nextInt();
                     scanner.nextLine();
-                    System.out.println("Enter the name of the books you want to issue: ");
+                    System.out.println("Enter the name of the books you want to issue:- ");
                     bookName = scanner.nextLine();
                     student.issueBooksToStudents(bookIndex, bookName);
                     System.out.println("Thank you for Issuing the Books..");
                     break;
                 case RETURN_A_PREVIOUSLY_ISSUED_BOOK:
-                    System.out.println("Enter the number of the book you want to return: ");
+                    System.out.println("Enter the number of the book you want to return:- ");
                     scanner.nextLine();
                     bookIndex = scanner.nextInt();
                     if (student.returnBook(bookIndex)) {
