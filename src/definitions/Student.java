@@ -116,10 +116,10 @@ public class Student {
      * This method will show the book which is issued
      */
     public void showIssuedBooksByStudent() {
-        System.out.println("These are the books issued by you: ");
-        for (int issuedBookIndex = 0; issuedBookIndex < NUMBER_OF_MAXIMUM_BOOKS_ISSUE; issuedBookIndex++) {
-            if (namesOfTheBooksIssuedByTheStudent[issuedBookIndex].getBookName() != null) {
-                System.out.print(namesOfTheBooksIssuedByTheStudent[issuedBookIndex].getBookName() + (issuedBookIndex < getNumberOfBooksIssuedByTheStudent() - 1 ? ", " : ".\n"));
+        System.out.println("These are the books issued by you:- ");
+        for (int index = 0; index < NUMBER_OF_MAXIMUM_BOOKS_ISSUE; index++) {
+            if (namesOfTheBooksIssuedByTheStudent[index].getBookName() != null) {
+                System.out.print(namesOfTheBooksIssuedByTheStudent[index].getBookName() + (index < getNumberOfBooksIssuedByTheStudent() - 1 ? ", " : ".\n"));
 
             }
         }
