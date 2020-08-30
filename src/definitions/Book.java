@@ -53,7 +53,7 @@ public class Book {
     public String toString() {
         return "Book Name=" + getBookName() + ", " +
                 " Author Name='" + getAuthorName() + ", " +
-                " 13-Digit ISBN Number='" + getThirteenDigitISBNNumber() + ". ";
+                " 13-Digit ISBN Number='" + getThirteenDigitISBNNumber() + ".";
     }
 
     @Override
